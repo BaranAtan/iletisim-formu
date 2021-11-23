@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+<style type="text/css">
+#baslik {
+	font-family: "Comic Sans MS", cursive;
+	color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	width: 150px;
+	text-align: center;
+	font-size: 36px;
+	padding-top: 50px;
+}
+#ev {
+	background-image: url(img/home.png);
+	height: 50px;
+	width: 50px;
+	float: right;
+	background-size: 50px;
+	background-color: #F60;
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 0px;
+	border-radius:10px;
+	
+}
+#ev:hover {
+	padding-left: 50px;
+	transition-duration:1s;
+}
+.kutular:focus {
+	background-color: #F60;
+	transition-duration:1s;
+	
+}
+#genel #textarea:focus {
+	background-color: #F60;
+	transition-duration:1s;
+}
+#genelalt #genel_alt_sol #insta:hover {
+	background-image: url(img/insta_icon_hover.png);
+	transition-duration:1s;
+}
+#genelalt #genel_alt_sol #pint:hover {
+	background-image: url(img/pinterest_icon_hover.png);
+	transition-duration:1s;
+	
+}
+body {
+	height: 1500px;
+	margin: 0px;
+	padding: 0px;
+}
+#alt {
+	background-color: #F60;
+	height: 35px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 18px;
+	padding-top: 15px;
+	font-family: "Comic Sans MS", cursive;
+}
+#genel {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#genelalt {
+	height: 100px;
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 50px;
+	padding-top: 5px;
+}
+.kutular {
+	height: 50px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px #F60;
+	font-size: 18px;
+}
+#genel #textarea {
+	margin-top: 5px;
+	width: 500px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px #F60;
+	height: 100px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#facebook {
+	background-image: url(img/face_icon.fw.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	background-size: 50px;
+	float: left;
+}
+#pint {
+	background-image: url(img/pinterest_icon.fw.png);
+	float: left;
+	height: 50px;
+	width: 50px;
+	background-size:50px;
+}
+#genel_alt_sol {
+	height: 100px;
+	width: 300px;
+	float: left;
+}
+#genel_alt_sag {
+	width: 65px;
+	float: right;
+	padding-right: 50px;
+}
+#genelalt #genel_alt_sol #facebook:hover {
+	background-image: url(img/face_icon_hover.png);
+	transition-duration:1s;
+}
+#gonder {
+	background-color: #333;
+	width: 65px;
+	height: 40px;
+	border-radius: 50px;
+	padding-top: 20px;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+
+}
+#genelalt #genel_alt_sag #gonder:hover {
+	background-color: #F93;
+		transform:rotate(180deg);
+		transition-duration:1s;
+}
+#insta {
+	background-image: url(img/insta_icon.fw.png);
+	float: left;
+	height: 50px;
+	width: 50px;
+	background-size:50px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="alt">2018 By Direct &quot;Baran Altan&quot;</div>
+<div id="baslik">İletişim</div>
+<div id="ev"></div>
+<div id="genel">
+  <form id="form1" name="form1" method="post" action="">
+    <label for="textfield"></label>
+    <input name="textfield" type="text" class="kutular" id="textfield" placeholder="Adınız" />
+    <br />
+    <label for="textfield2"></label>
+    <input name="textfield2" type="text" class="kutular" id="textfield2" placeholder="Mail" />
+    <br />
+    <label for="textfield3"></label>
+    <input name="textfield3" type="text" class="kutular" id="textfield3" placeholder="Telefon" />
+  </form>
+  <label for="textarea"></label>
+  <textarea name="textarea" cols="45" rows="5" id="textarea" placeholder="Mesaj"></textarea>
+</div>
+<div id="genelalt">
+  <div id="genel_alt_sol">
+    <div id="facebook"></div>
+    <div id="insta"></div>
+    <div id="pint"></div>
+  </div>
+  <div id="genel_alt_sag">
+    <div id="gonder">Gönder</div>
+  </div>
+</div>
+</body>
+</html>
